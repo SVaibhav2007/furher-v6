@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,108 @@
 </head>
 <body>
     <h1>Resume Analyzer</h1>
+    
     <form id="resumeForm">
-        <input type="file" id="resumeInput" accept=".pdf" required>
+        <label for="department">Select Department:</label>
+        <select id="department" required>
+            <option value="">--Choose Department--</option>
+            <option value="CSE">Computer Science (CSE)</option>
+            <option value="AI/ML">Artificial Intelligence / Machine Learning</option>
+            <option value="MBA">MBA</option>
+            <option value="Agriculture">Agriculture</option>
+        </select>
+
+        <input type="file" id="resumeInput" multiple accept=".pdf,.docx" required>
         <button type="submit">Upload & Analyze</button>
     </form>
+
     <div id="result"></div>
+
     <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Resume Checker</div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="form.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Resume Analyzer</h1>
+    
+    <form id="resumeForm">
+        <label for="department">Select Department:</label>
+        <select id="department" required>
+            <option value="">--Choose Department--</option>
+            <option value="CSE">Computer Science (CSE)</option>
+            <option value="AI/ML">Artificial Intelligence / Machine Learning</option>
+            <option value="MBA">MBA</option>
+            <option value="Agriculture">Agriculture</option>
+        </select>
+
+        <input type="file" id="resumeInput" multiple accept=".pdf,.docx" required>
+        <button type="submit">Upload & Analyse</button>
+    </form>
+
+    <div id="result"></div>
+
+    <!-- <form id="resumeForm">
+        <select id="department">
+            <option value="CSE">CSE</option>
+            <option value="AI/ML">AI/ML</option>
+            <option value="MBA">MBA</option>
+            <option value="Agriculture">Agriculture</option>
+        </select>
+        
+        <input type="file" id="resumeInput" name="resumes" multiple>
+        
+        <button type="submit">Upload Resumes</button>
+    </form>
+    
+    <div id="result"></div> -->
+
+    <script src="script.js"></script>
+    <div class="space">
+       .
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>A dedicated team of four professionals collaborates to develop a website that reviews resumes, providing expert feedback to enhance job prospects</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 Your Resume Checker | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
